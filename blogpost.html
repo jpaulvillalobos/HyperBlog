@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Documento de comer</title>
+    <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <script>
+    $(document).ready(function(){
+        $("#includeContenido").load("historia.txt"); 
+    });
+    </script>
 </head>
 <body>
     <h1 class="cabecera">esto es un titulo de ejemplo</h1>
@@ -26,6 +32,7 @@
         <p>
             bienvenidos a este nuevo sistema de seguridad que es ssh
         </p>
+        <div id="includeContenido"></div>
     </div>
     
 </body>
